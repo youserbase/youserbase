@@ -1,0 +1,211 @@
+.controller_navigation {
+	width: 200px;
+}
+.controller_navigation div h1 {
+	margin: 0px;
+	padding: 3px;
+	font-size: 1em;
+	border-bottom: 1px solid black;
+	background-color: #003149;
+	color: white;
+	height: 16px;
+}
+.controller_navigation div ul {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+.controller_navigation div.root h1 {
+	background-color: #A44;
+}
+.controller_navigation div.external_links h1 {
+	background-color: #AA4;
+}
+.controller_navigation div.devices h1 {
+	background-color: #44A;
+}
+.dobber {
+	padding: 5px;
+	padding-left: 65px;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+}
+.dobber.error {
+	border: 1px solid #f00;
+	background-color: #fcc;
+	background-image: url(/*[[ASSETS:images/alert.png]]*/);
+}
+.dobber.success {
+	background-color: #cfc;
+	border: 1px solid #0f0;
+	background-image: url(/*[[ASSETS:images/clean.png]]*/);
+}
+.dobber.system_error {
+	background-color: #000;
+	border: 1px solid #f00;
+	color: red;
+	background-image: url(/*[[ASSETS:images/alert.png]]*/);
+}
+
+*.zebra *.striped {
+	background-color: #EEE;
+}
+table tr .highlighted {
+	background-color: #FFD;
+}
+table tr.header td.highlighted, table.zebra tr.striped td.highlighted {
+	background-color: #EEC;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+*[rel^=phrase] {
+	border-bottom: 1px dotted orange;
+}
+*[rel^=phrase].untranslated {
+	border: 2px dotted orange;
+}
+*.highlight {
+	background-color: #FFB;
+	font-weight: bold;
+	border: 1px solid #BB8;
+}
+
+/** SLIDER **/
+.ui-slider {
+	border: 1px solid #CCC;
+}
+span.slider-boundary {
+	margin-top: 4px;
+}
+span.slider-boundary.lower {
+	float: left;
+	padding-left: 1px;
+}
+span.slider-boundary.upper {
+	float: right;
+	padding-right: 1px;
+}
+
+/** jGrowl **/
+div.jGrowl div.jGrowl-notification {
+	height: auto;
+}
+div.jGrowl div.jGrowl-notification.success {
+	background-color: #080;
+}
+div.jGrowl div.jGrowl-notification.notice {
+	background-color: #008;
+}
+div.jGrowl div.jGrowl-notification.error {
+	background-color: #800;
+}
+
+/* PAGINATION */
+div.pagination {
+	margin-top: 2px;
+	margin-bottom: 3px;
+}
+div.pagination ul {
+	list-style: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+div.pagination ul li {
+	float: left;
+	display: block;
+	padding: 3px 6px;
+	margin: 0px;
+	margin-right: 2px;
+	border: 1px solid transparent;
+	background-color: #FFF;
+}
+div.pagination ul li:hover {
+	border: 1px solid #444;
+}
+div.pagination ul li.previous, div.pagination ul li.next {
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	border: 0px;
+}
+div.pagination ul li.previous {
+	background-image: url(/*[[ASSETS:images/famfamfam/resultset_previous.png]]*/);
+}
+div.pagination ul li.next {
+	background-image: url(/*[[ASSETS:images/famfamfam/resultset_next.png]]*/);
+}
+div.pagination ul li.previous, div.pagination ul li.previous a, div.pagination ul li.next, div.pagination ul li.next a {
+	font-size: 20px;
+	color: transparent !important;
+}
+div.pagination ul li.previous.inactive, div.pagination ul li.next.inactive {
+	visibility: hidden;
+}
+div.pagination ul li.current {
+	background-color: #FFA;
+}
+div.pagination ul li:hover {
+	background-color: #FCA;
+}
+div.pagination ul li.inactive {
+	border: 0;
+	margin: 1px;
+	color: #AAA;
+}
+div.pagination ul li.divider {
+	position: relative;
+}
+div.pagination ul li.inactive:hover {
+	background-color: inherit;
+}
+div.pagination br {
+	clear: both;
+}
+div.pagination ul li.divider div.more {
+	position: absolute;
+	left: -1px;
+	top: 100%;
+	padding: 3px;
+	border: 1px solid black;
+	background-color: #FFF;
+	width: 100px;
+	max-width: 100px;
+	z-index: 1000;
+}
+
+#col1 {
+	border: 1px solid red;
+	width: 25%;
+}
+#col2 {
+	border: 1px solid green;
+	width: 24%;
+}
+
+#col3 {
+	border: 1px solid blue;
+	width: 75%;
+	margin: 0;
+}
+
+body {
+	padding-bottom: 35px;
+}
+
+img.avatar {
+	border: 1px solid black;
+	padding: 1px;
+	margin: 1px;
+}
+
+#query.hint {
+	color: #ACACAC;
+}

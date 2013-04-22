@@ -1,0 +1,127 @@
+/*
+TG180409
+*/
+.ratingbox {
+	position: relative;
+	width: 154px;
+	height: 90px;
+	/*overflow: hidden;*/
+}
+.ratingbox.ratingbox_small {
+	position: relative;
+	width: 77px;
+	height: 29px;
+}
+.ratingbox .header {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 154px;
+	font: 900 12px/12px Arial, Helvetica, sans-serif;
+	text-align: center;
+	z-index: 12;
+	color: #182C4A;
+}
+.ratingbox_canvas, 
+.rating_average, 
+.rating_average .index, 
+.rating_user, 
+.rating_user .index {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	cursor: pointer;
+	width: 154px;
+	height: 58px;
+	background: url(/*[[ASSETS:images/rating/ratingbox.png]]*/);
+}
+.ratingbox_small .ratingbox_canvas, 
+.ratingbox_small .rating_average, 
+.ratingbox_small .rating_average .index, 
+.ratingbox_small .rating_user, 
+.ratingbox_small .rating_user .index {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 77px;
+	height: 29px;
+	background: url(/*[[ASSETS:images/rating/ratingbox_50_percent.png]]*/);
+}
+.ratingbox_canvas {
+	top: 20px;
+}
+.rating_average {
+	background-position: 0 -59px;
+	z-index:5;
+}
+.rating_user .index{
+	background-position: 154px 0px;
+}
+.rating_user {
+	background-position: 154px -59px;
+	display: none;
+	z-index: 10;
+}
+.ratingbox_small .rating_average {
+	background-position: 0 -29px;
+}
+.ratingbox_small .rating_user .index{
+	background-position: 77px 0px;
+}
+.ratingbox_small .rating_user {
+	background-position: 77px -29px;
+}
+.ratingbox .score{
+	position: absolute;
+	top: 34px;
+	left: 10px;
+	font: 900 24px/25px Arial, Helvetica, sans-serif;
+	z-index: 12;
+	color: white;
+	cursor: pointer;
+	width: 36px;
+	text-align: center;
+}
+.ratingbox.ratingbox_small .score{
+	top: 8px;
+	left: 0px;
+	font: 300 11px/11px Arial, Helvetica, sans-serif;
+	z-index: 12;
+	color: white;
+	cursor: pointer;
+	width: 30px;
+	text-align: center;
+}
+.ratingbox:hover .score{
+	color: #00FF00;
+}
+.ratingbox.isdone:hover .score{
+	color: white;
+}
+
+.indicator {
+	position: absolute;
+	top: 65px;
+	left: 10px;
+	z-index: 12;
+}
+.ajax_indicator {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 12px;
+	width: 33px;
+	height: 33px;
+	z-index: 13;
+	background: url(/*[[ASSETS:images/ajax_indicator_big.gif]]*/);
+}
+.ratingbox_small .ajax_indicator {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	width: 16px;
+	height: 16px;
+	z-index: 13;
+	background: url(/*[[ASSETS:images/ajax_indicator.gif]]*/);
+}

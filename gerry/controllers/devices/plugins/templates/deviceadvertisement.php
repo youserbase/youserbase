@@ -1,0 +1,1 @@
+<advertisement id="<?=empty($position)?'rbox':$position?>"/>

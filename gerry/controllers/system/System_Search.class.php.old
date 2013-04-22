@@ -1,0 +1,91 @@
+<?php
+class System_Search extends Controller
+{
+	public function Search()
+	{
+		Event::Dispatch('alert', 'Search:Searched', $_REQUEST['needle']);
+
+		if (strlen(trim(str_replace('%', '', $_REQUEST['needle'])))==0)
+		{
+			Dobber::ReportError('PROMPT_SEARCH_NEEDLE', array('min_length'=>3));
+			FrontController::Relocate('Display');
+		}
+
+		if (!SearchResult::Retrieve($_REQUEST['needle']))
+		{
+			SearchResult::Store($_REQUEST['needle'], Event::Dispatch('harvest', 'Global:Search', $_REQUEST['needle']));
+		}
+		FrontController::Relocate('Display', array('needle'=>$_REQUEST['needle']));
+	}
+
+	public function Search_AJAX()
+	{
+		if (!isset($_GET['needle']))
+		{
+			$template = $this->get_template(true);
+			return;
+		}
+
+		Event::Dispatch('alert', 'Search:Searched', $_REQUEST['needle']);
+
+		$results = Event::Dispatch('harvest', 'Global:Search_AJAX', $_REQUEST['needle']);
+		$result = empty($results)
+			? array()
+			: call_user_func_array('array_merge', $results);
+		$template = $this->get_template(false, json_encode($result));
+	}
+
+	public function Display()
+	{
+		$needle = empty($_REQUEST['needle'])
+			? null
+			: $_REQUEST['needle'];
+
+		$template = $this->get_template(true);
+		$template->assign('needle', $needle);
+		if ($needle)
+		{
+			$template->assign('quantities', SearchResult::GetQuantity($needle));
+		}
+	}
+
+	public function Results()
+	{
+		$current_page = (isset($_REQUEST['page']) and preg_match('/^\d+$/S', $_REQUEST['page']))
+			? $_REQUEST['page']
+			: 0;
+		$type = empty($_REQUEST['type'])
+			? null
+			: $_REQUEST['type'];
+		$needle = empty($_REQUEST['needle'])
+			? null
+			: $_REQUEST['needle'];
+
+		$template = $this->get_template(true);
+		if ($needle)
+		{
+			$url_parameters = array(
+				'needle'=>$needle,
+				'page'=>''
+			);
+			if ($type!==null)
+			{
+				$url_parameters = array_merge(array('type'=>$type), $url_parameters);
+			}
+
+			$quantity = SearchResult::GetQuantity($_REQUEST['needle'], $type);
+
+			$template->assign('needle', $needle);
+			$template->assign('url_parameters', $url_parameters);
+			$template->assign('quantity', is_array($quantity) ? $quantity[0] : $quantity);
+			$template->assign('current_page', $current_page);
+			$template->assign('results', SearchResult::Retrieve($needle, $type, $current_page*Config::Get('search:pagination_count'), Config::Get('search:pagination_count')));
+
+		}
+		else
+		{
+			$template->assign('needle', false);
+		}
+	}
+}
+?>

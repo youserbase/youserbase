@@ -1,0 +1,103 @@
+#development_console {
+	background-color: #FEE;
+	border: 1px solid red;
+	padding: 2px;
+	z-index: 10000;
+}
+#development_console.adjusted {
+	bottom: 10%;
+	left: -79%;
+	overflow: auto;
+	position: fixed;
+	right: 99%;
+	top: 10%;
+}
+#development_console .close {
+	background-color: red;
+	cursor: pointer;
+	padding: 2px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#debug {
+	background: #000;
+	border: 1px solid #8a8;
+	border-left: 0;
+	border-top: 0;
+	color: #fff;
+	font: 13px monospace;
+	left: 0;
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 0.3;
+	overflow: auto;
+	padding: 4px;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+}
+#debug:hover {
+	opacity: 1;
+}
+#debug .log {
+	margin: 0;
+	padding: 0;
+}
+#debug .log dt {
+	font-size: 1em;
+}
+#debug .log dt label {
+	cursor: pointer;
+	border-bottom: 1px solid #888;
+}
+#debug .log dd {
+	background-color: #888;
+	color: #000;
+	max-height: 400px;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+}
+#debug .log .sub {
+	padding-left: 18px;
+}
+#debug .log dt.sub {
+	background: #000 url(/*[[ASSETS:images/famfamfam/bullet_right.png]]*/) left center no-repeat;
+}
+#debug.enabled .log {
+	display: block;
+}
+.db_queries_toggle {
+	cursor: pointer;
+	text-decoration: underline;
+}
+#db_queries ol li {
+	color: #999;
+	white-space: no-wrap;
+}
+#db_queries ol li:hover {
+	background-color: #fff;
+	color: #000;
+}
+#db_queries li code {
+	margin-top: 0;
+	padding: 0px;
+}
+#db_queries ol {
+	border-top: 1px solid black;
+	margin-left: 25px;
+}
+#db_queries ol .striped {
+	background-color: #ccc;
+}
+#db_queries ol .plain {
+	background-color: #ddd;
+}
+#db_queries .duration {
+	color: none;
+}
+
+.view.root_debug form, .view.root_debug form fieldset {
+	display: inline;
+}

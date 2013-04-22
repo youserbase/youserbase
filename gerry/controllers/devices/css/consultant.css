@@ -1,0 +1,56 @@
+#consultant form * {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	position: relative;
+}
+#consultant .header {
+	font-weight: 900;
+	margin: 8px 0;
+}
+#consultant form dl {
+	margin: 11px;
+}
+#consultant form dl dt {
+	text-align: left;
+}
+#consultant_k{
+	margin: 20px 20px 30px;
+}
+#devices_consultant_index ul.device_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#devices_consultant_index ul.device_list > li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#devices_consultant_index ul.device_list > li.hidden {
+	display: none;
+}
+
+#devices_consultant_index ul.shapes, #consultant ul.inputmethods {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#devices_consultant_index ul.shapes li, #consultant ul.inputmethods li {
+	position: relative;
+	float: left;
+	width: 33px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 9px;
+}
+#devices_consultant_index ul.shapes li.r0, #consultant ul.inputmethods li.r0 {
+	border-bottom: 1px dotted black;
+	display: block;
+	text-align: left;
+	float: none;
+	width: auto;
+	line-height: 1.5em;
+}

@@ -1,0 +1,38 @@
+#feedback_beta {
+	background: #ccc;
+	left: -452px;
+	opacity: 0.92;
+	position: absolute;
+	top: 60px;
+	z-index: 10;
+	width: 452px;
+}
+#feedback_beta.visible {
+	left: 0px;
+}
+#feedback_beta form {
+	padding: 18px 18px 20px 18px;
+	text-align: right;
+}
+#feedback_beta textarea {
+	display: block;
+	height: 130px;
+	margin: 5px 0;
+	width: 400px;
+}
+#feedback_beta img {
+	cursor: pointer;
+	position: absolute;
+	right: -36px;
+	top: 0;
+}
+
+#feedback_beta .response div {
+	padding: 20px 10px;
+	text-align: right;
+}
+#feedback_table .ajax_content {
+	border-top: 1px solid #888;
+	margin: 3px;
+	padding: 3px;
+}

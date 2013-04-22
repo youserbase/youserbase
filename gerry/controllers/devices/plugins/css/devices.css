@@ -1,0 +1,25 @@
+ul.floated.device_list > li {
+	padding:5px;
+	width: 80px;
+}
+ul.narrow.device_list > li {
+	width: 49px;
+}
+ul.floated.device_list > li a {
+	font-size: 10px;
+	line-height: 11px;
+}
+ul.floated.device_list > li span.counter {
+	background-color: #fff;
+	border: 1px solid gray;
+	display: block;
+	font-weight: bold;
+	height: 16px;
+	left: 0;
+	margin: 1px;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 16px;
+}

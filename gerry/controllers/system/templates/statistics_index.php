@@ -1,0 +1,1 @@
+<pre><?=print_r($hooks, true)?></pre>

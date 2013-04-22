@@ -1,0 +1,42 @@
+#activity_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#activity_list li {
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding: 2px;
+	position: relative;
+}
+#activity_list li.a1 {
+	background-color: #f8f8f8;
+}
+#activity_list li:first-child {
+	border-top: 0;
+}
+#activity_list li img {
+	vertical-align: middle;
+}
+#activity_list li .more {
+	background: url(/*[[ASSETS:images/famfamfam/help.png]]*/) center no-repeat;
+	cursor: pointer;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 16px;
+}
+#activity_list li .more.open {
+	background-image: url(/*[[ASSETS:images/famfamfam/information.png]]*/);
+}
+#activity_list li .more img {
+	visibility: hidden;
+}
+
+#activity_list blockquote {
+	border-top: 1px dashed #ccc;
+	margin: 0 15px;
+	padding-top: 15px;
+	text-align: center;
+}

@@ -1,0 +1,91 @@
+<?php
+class focus_type
+{
+
+	protected static $instance = null;
+	private static $table = 'focus_type';
+	public static $data = array();
+	public static $focus_type_id;
+	public static $focus_type_id_int;
+	public static $focus_type_name;
+	public static $timestamp;
+	public static $youser_id;
+
+
+	public function __construct()
+	{
+	}
+
+
+	public function __clone()
+	{
+		throw new Exception('Cannot duplicate a singleton.');
+	}
+
+
+	public function Get()
+	{
+		if(self::$instance == null)
+		{
+			$c = __CLASS__;
+			self::$instance = new $c;
+			self::Init();
+		}
+		return self::$instance;
+	}
+
+
+	private function Init($focus_type_id = null)
+	{
+		if($focus_type_id !== null)
+		{
+			$result = DBManager::Get('devices')->query("SELECT * FROM ".self::$table." WHERE focus_type_id = ?;", $focus_type_id)->to_array();
+			self::$data = array();
+		}
+		else{
+		$result = DBManager::Get('devices')->query("SELECT * FROM ".self::$table." ORDER BY ".self::$table."_name".";")->to_array();
+		}
+		foreach($result as $id => $line)
+		{
+			self::$data[$id] = array('focus_type_id' => $line['focus_type_id'], 'focus_type_id_int' => $line['focus_type_id_int'], 'focus_type_name' => $line['focus_type_name'], 'timestamp' => $line['timestamp'], 'youser_id' => $line['youser_id'], );
+		}
+	}
+
+	public function Load($focus_type_id = null)
+	{
+		if($focus_type_id !== null)
+		{
+			self::Init($focus_type_id);
+		}
+		return self::$data;
+	}
+
+	public function Set($focus_type_id = null, $focus_type_id_int = null, $focus_type_name = null, $timestamp = null, $youser_id = null)
+	{
+		if($focus_type_id !== null)
+		{
+			self::$focus_type_id = $focus_type_id;
+		}		if($focus_type_id_int !== null)
+		{
+			self::$focus_type_id_int = $focus_type_id_int;
+		}		if($focus_type_name !== null)
+		{
+			self::$focus_type_name = $focus_type_name;
+		}		if($timestamp !== null)
+		{
+			self::$timestamp = $timestamp;
+		}		if($youser_id !== null)
+		{
+			self::$youser_id = $youser_id;
+		}
+	}
+
+	public function save()
+	{
+		DBManager::Get('devices')->query("LOCK TABLES focus_type WRITE;");
+		$db = DBManager::Get('devices')->query("INSERT INTO focus_type (focus_type_id, focus_type_id_int, focus_type_name, timestamp, youser_id) VALUES(?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE focus_type_id=VALUES(focus_type_id),focus_type_id_int=VALUES(focus_type_id_int),focus_type_name=VALUES(focus_type_name),timestamp=VALUES(timestamp),youser_id=VALUES(youser_id);", $this->focus_type_id, $this->focus_type_id_int, $this->focus_type_name, $this->timestamp, $this->youser_id);
+		DBManager::Get('devices')->query("UNLOCK TABLES;");
+	}
+
+}
+?>

@@ -1,0 +1,109 @@
+div.device {
+	position: relative;
+}
+div.device.text {
+	display: inline;
+}
+/*for IE* - cause of inline-block*/
+div.device.image {
+	display: inline;
+}
+/*end for IE*/
+div.device.image {
+	display: inline-block;
+	margin: 1px;
+	position: relative;
+}
+div.device.image:hover {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px !important;
+	margin: 0;
+	margin-left: -12px;
+	-moz-border-radius: 5px !important;
+	padding-left: 12px;
+	-webkit-border-radius: 5px !important;
+	z-index: 1000;
+}
+a.device-link:hover,a.device-link:hover img {
+	border-style: none !important;
+	background-color: transparent !important;
+}
+div.device a img {
+	vertical-align: top;
+}
+
+div.device div.rating {
+	background: url(/*[[ASSETS:images/rating/rating_thumb.png]]*/) top left no-repeat;
+	font-weight: bold;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 43px;
+	width: 60px;
+	color: white;
+	font: 11px/11px Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 5px 0 8px 3px;
+}
+div.device:hover div.rating {
+	opacity: 1;
+}
+
+div.device.avatar {
+	height: 64px;
+	overflow: visible;
+	text-align: center;
+	width: 64px;
+}
+
+div.device ul.icons {
+	display: none;
+	height: 99%;
+	left: 0;
+	list-style-type: none;
+	margin: 0 !important;
+	padding: 2px !important;
+	position: absolute;
+	top: 0;
+}
+div.device:hover ul.icons {
+	display: block;
+}
+div.device ul.icons li {
+	cursor: pointer;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+div.device ul.icons li:hover {
+}
+/** MANUFACTURER **/
+div.manufacturer {
+	background-color: #fff;
+	text-align: center;
+}
+div.manufacturer.small {
+	height: 102px;
+	width: 102px;
+}
+div.manufacturer.tiny {
+	font-size: 25px;
+	height: 34px;
+	width: 102px;
+}
+div.manufacturer a {
+	text-decoration: none;
+}
+div.manufacturer a img {
+	border: 0;
+	margin: 1px;
+	vertical-align: middle;
+}
+div.manufacturer.small a:hover img {
+	border: 1px solid black;
+	margin: 0;
+}
+
+#device_image {
+	margin-right: 25px;
+}

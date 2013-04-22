@@ -1,0 +1,29 @@
+#nick_left {
+	width: 200px;
+	float: left;
+	margin: 10px 0px 5px 10px;
+}
+#nick_right {
+	margin: 10px 10px 5px 220px;
+}
+#nick_right .subheader{
+	text-align: right;
+}
+#user_nickpage_display .connection {
+	text-align: center;
+}
+#user_nickpage_display .connection img {
+	vertical-align: middle;
+}
+
+#nickpage_profile .header td {
+	background: #666 url(/*[[ASSETS:_t/glossy_sprites.gif]]*/) repeat scroll -1px -38px;
+	border-radius-topleft: 4px;
+	border-radius-topright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-radius-topleft: 4px;
+	-webkit-border-radius-topright: 4px;
+	color: #fff !important;
+	font-weight: bold;
+}

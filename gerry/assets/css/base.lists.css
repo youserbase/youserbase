@@ -1,0 +1,77 @@
+ul.zebra {
+	list-style: none;
+	margin: 0 -10px -10px -10px;
+	padding: 0;
+}
+.zebra > li {
+	border-top: 1px solid #ccc;
+	list-style: none;
+	margin: 0;
+	padding: 4px 0;
+}
+.zebra > li.r0 {
+	border-top: 0;
+}
+.zebra > li.a0 {
+	background-color: #eee;
+}
+.zebra > li.first {
+	background-color: #fff;
+	border-top: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	text-align: center;
+}
+.zebra > li.first.options {
+	padding: 0;
+}
+.zebra > li p, .zebra > li div {
+	margin: 0;
+	padding: 0 8px;
+}
+.zebra > li div div {
+	padding: 0;
+}
+.zebra .header {
+	border-bottom: 1px dashed #ccc;
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+.zebra .content a {
+	background: transparent url(/*[[ASSETS:images/famfamfam/link.png]]*/) left center no-repeat;
+	padding: 1px 0 1px 18px;
+}
+.zebra .content .plain {
+	background: none;
+	padding: 0;
+}
+.zebra a.resolved {
+	background-image: url(/*[[ASSETS:images/famfamfam/link_break.png]]*/);
+}
+ul.zebra a.tag {
+	background-image: url(/*[[ASSETS:images/famfamfam/tag_blue.png]]*/);
+}
+ul.zebra a.nickpage {
+	background-image: url(/*[[ASSETS:images/famfamfam/bullet_home.png]]*/);
+}
+.zebra > li p.time {
+	color: #888;
+	font-size: 0.9em;
+	text-align: right;
+}
+.zebra > li p.time a {
+	color: #888;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+ul.floated, ul.floated > li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.floated > li {
+	float: left;
+	position: relative;
+	text-align: center;
+}

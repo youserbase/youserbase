@@ -1,0 +1,12 @@
+/*
+ * TG 18.08.2009
+
+*/
+.fright {
+	display: block;
+	float: right;
+}
+.fleft {
+	display: block;
+	float: left;
+}

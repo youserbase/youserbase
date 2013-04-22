@@ -1,0 +1,27 @@
+/** TODO: Combine this or even include it for suitable browsers **/
+.sprite.front {
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding: 1px 0 1px 18px;
+}
+.sprite.like {
+	background-image: url(/*[[ASSETS:images/famfamfam/thumb_up.png]]*/);
+}
+.sprite.dislike {
+	background-image: url(/*[[ASSETS:images/famfamfam/thumb_down.png]]*/);
+}
+.sprite.mine {
+	background-image: url(/*[[ASSETS:images/famfamfam/phone_add.png]]*/);
+}
+.sprite.delete {
+	background-image: url(/*[[ASSETS:images/famfamfam/delete.png]]*/);
+}
+.sprite.picture_add {
+	background-image: url(/*[[ASSETS:images/famfamfam/picture_add.png]]*/);
+}
+.sprite.page_copy {
+	background-image: url(/*[[ASSETS:images/famfamfam/page_copy.png]]*/);
+}
+.sprite.attach {
+	background-image: url(/*[[ASSETS:images/famfamfam/attach.png]]*/);
+}

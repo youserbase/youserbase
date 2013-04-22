@@ -1,0 +1,36 @@
+table.message_list {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0;
+	width: 100%;
+}
+table.message_list .new td {
+	background-color: #CCF;
+}
+table.message_list .new.striped td {
+	background-color: #AAE;
+}
+table.message_list .marked td {
+	background-color: #FFC;
+}
+table.message_list .marked.striped td {
+	background-color: #DDB;
+}
+table.message_list .marked.new td {
+	background-color: #CFC;
+}
+table.message_list .marked.new.striped td {
+	background-color: #BDB;
+}
+
+table.message_list td {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	vertical-align: top;
+}
+table.message_list .message_content {
+	padding: 3px;
+	border: 1px dashed black;
+	background-color: #FFC;
+	min-height: 50px;
+}

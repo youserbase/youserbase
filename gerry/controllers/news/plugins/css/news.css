@@ -1,0 +1,28 @@
+#plugin_news p {
+	margin: 0;
+	padding: 5px;
+	text-align: justify;
+}
+#plugin_news p a {
+	text-decoration: none;
+}
+div.news.article h1 {
+	border-bottom: 1px solid black;
+}
+div.news.article small {
+	border-bottom: 1px dotted #888;
+	display: block;
+	font-size: 0.8em;
+	text-align: center;
+}
+div.news.article q {
+	background-color: #eee;
+	display: block;
+	padding: 5px;
+	text-align: justify;
+}
+div.news.article p {
+	border-top: 1px dotted #888;
+	font-size: 0.8em;
+	text-align: right;
+}

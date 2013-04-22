@@ -1,0 +1,42 @@
+<?php
+	$categories = array(
+		'products' => 'products',
+		'manufacturers' => 'manufacturers',
+		'tags' => 'tags',
+	);
+?>
+<div id="search_results" class="clr rbox">
+	<div class="rbox_options">
+		<a href="#" id="search_result_close"><phrase id="CLOSE_SEARCH_RESULTS"/></a>
+	</div>
+	<h2>
+		<span id="search_count">0</span>
+		<phrase id="SEARCH_RESULT"/>
+	</h2>
+	<ul class="found stored:max:15">
+	<?php foreach ($categories as $outer => $inner): ?>
+		<li class="<?=$outer?>">
+			<h3 class="plain">
+				<a href="#" class="search_previous">&#x25c0;</a>
+				<phrase id="SEARCH_RESULT_<?=strtoupper($outer)?>"/>
+				<a href="#" class="search_next">&#x25ba;</a>
+			</h3>
+			<ul class="<?=$inner?>">
+			</ul>
+		</li>
+	<?php endforeach; ?>
+	</ul>
+	<div class="not_found">
+		<p>
+			<phrase id="NO_SEARCH_RESULT"/>
+		</p>
+		<p>
+			<phrase id="CREATE_NEW_DEVICE_INFO"/>:
+			<a href="<?=FrontController::GetLink('Datasheets', 'datasheets', 'buildStartSheet')?>" class="lightbox">
+				<phrase id="CREATE_NEW_DEVICE"/>
+			</a>
+		</p>
+	</div>
+
+	<div class="layer" style="display: none;"></div>
+</div>

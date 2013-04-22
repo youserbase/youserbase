@@ -1,0 +1,41 @@
+.device_sliderGallery {
+    height:160px;
+	overflow:auto;
+	padding:10px;
+	position:relative;
+	width:405px;
+}
+
+.device_sliderGallery UL {
+	list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:0;
+padding:0;
+position:absolute;
+white-space:nowrap;
+}
+
+.device_sliderGallery UL LI {
+    display: inline;
+}
+
+.device_slider
+{
+	height:17px;
+	margin-left:5px;
+	margin-top:140px;
+	padding:1px;
+	position:relative;
+	width:390px;
+}
+
+.device_handle {
+	cursor:move;
+	height:17px;
+	position:absolute;
+	top:0;
+	width:181px;
+	z-index:100;
+	background: lightgrey;
+}

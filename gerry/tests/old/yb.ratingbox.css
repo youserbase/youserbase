@@ -1,0 +1,83 @@
+/*
+TG180409
+*/
+body {
+	background: white;
+}
+.ratingbox {
+	position: relative;
+	width: 154px;
+	height: 80px;
+}
+.ratingbox .header {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	font: 900 14px/14px Arial, Helvetica, sans-serif;
+	z-index: 12;
+	color: black;
+}
+.ratingbox_canvas, .rating_average, .rating_average .index, .rating_user, .rating_user .index {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	cursor: pointer;
+	width: 154px;
+	height: 58px;
+/*
+	background: url(/*[[ASSETS]]* /images/rating/ratingbox.png);
+*/
+	background: url(http://assets.youserbase.org/images/rating/ratingbox.png);
+}
+.ratingbox_canvas {
+	top: 10px;
+}
+.rating_average {
+	background-position: 0 -59px;
+	z-index:5;
+}
+.rating_user .index{
+	background-position: 154px 0px;
+}
+.rating_user {
+	background-position: 154px -59px;
+	display: none;
+	z-index: 10;
+}
+.ratingbox .score{
+	position: absolute;
+	top: 24px;
+	left: 10px;
+	font: 900 24px/25px Arial, Helvetica, sans-serif;
+	z-index: 12;
+	color: white;
+	cursor: pointer;
+	width: 36px;
+	text-align: center;
+}
+.ratingbox:hover .score{
+	color: #00FF00;
+}
+.ratingbox.isdone:hover .score{
+	color: white;
+}
+
+.indicator {
+	position: absolute;
+	top: 65px;
+	left: 10px;
+	z-index: 12;
+}
+.ajax_indicator {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 12px;
+	width: 33px;
+	height: 33px;
+	z-index: 13;
+/*
+	background: url(/*[[ASSETS]]* /images/ajax_indicator_big.gif);
+*/
+	background: url(http://assets.youserbase.org/images/ajax_indicator_big.gif);
+}

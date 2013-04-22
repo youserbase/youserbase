@@ -1,0 +1,83 @@
+#bulk {
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+#page_margins {
+	margin: auto;
+}
+#top_bar {
+	position: relative;
+}
+#logo {
+	color: black;
+	float: left;
+	font-family: monospace;
+	font-size: 60px;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+}
+#searchbar {
+	float: left;
+	margin: 25px 0 0 25px;
+	width: 350px;
+}
+#searchbar #query {
+	width: 350px;
+}
+#banner {
+	float: right;
+	height: 60px;
+	margin: 2px 0;
+	width: 468px;
+	background-color: gray;
+}
+#nav_top {
+	background-color: #000;
+	clear: both;
+	color: white;
+	height: 2em;
+	position: relative;
+	text-align: right;
+}
+#nav_top a {
+	color: white;
+	text-decoration: none;
+}
+#nav_top ul {
+	border-left: 1px solid white;
+	left: 0;
+	list-style-type: none;
+	margin: 0 0 0 10px;
+	padding: 0;
+	position: absolute;
+	top: 0;
+}
+#nav_top ul li {
+	border-right: 1px solid white;
+	display: block;
+	float: left;
+	height: 2em;
+	margin: 0;
+	padding: 3px;
+	text-align: center;
+	width: 125px;
+}
+#nav_top ul li:hover, #nav_top ul li.on {
+	background-color: #444;
+}
+#nav_top #signin_menu {
+	background-color: #444;
+	height: 2em;
+	margin: 0 20px 0 700px;
+	padding: 0 5px;
+}
+#nav_top a {
+	color: #CCC;
+}
+#nav_top a:hover {
+	text-decoration: underline;
+}
+#nav_top .red {
+	color: red;
+}

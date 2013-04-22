@@ -1,0 +1,100 @@
+.device_datasheet {
+	position: relative;
+}
+
+#device_operations {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#device_operations ul {
+	list-style-type: none;
+}
+#device_operations ul li {
+	display: inline;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.device_datasheet .device_ratings ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 50%;
+}
+.device_datasheet .device_ratings ul li {
+	position: relative;
+}
+
+.device_datasheet .device_ratings .rating_star {
+	background: url(/*[[ASSETS:images/famfamfam/star_grey.png]]*/) repeat-x 0;
+	right: 10px;
+	position: absolute;
+	top: 0;
+	width: 80px;
+}
+
+.device_datasheet .device_ratings .rating_star div
+{
+	height: 16px;
+	background: url(/*[[ASSETS:images/famfamfam/star.png]]*/) repeat-x 0;
+}
+
+#data_sheets, .device_datasheet br.clear {
+	clear: left;
+}
+
+.phonesheet table tr.toggled {
+	display: none !important;
+}
+.phonesheet td, .phonesheet th {
+	vertical-align: top;
+}
+/*
+.phonesheet .device_actions {
+	border-right: 1px dotted #ccc;
+}
+*/
+.device_actions .disabled {
+	opacity: 0.3;
+}
+
+.phonesheet .option_divider {
+	border-bottom: 1px dotted #ccc;
+}
+
+.phonesheet tbody.r0 th div.th {
+	margin: 0 !important;
+}
+
+.phonesheet .advertisement {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/** Edit-Funktionen **/
+.phonesheet th img.edit.cancel {
+	display: none;
+}
+
+.phonesheet .editformular {
+	display: none;
+}
+
+.phonesheet .editing th img.edit {
+	display: none;
+}
+.phonesheet .editing th img.edit.cancel {
+	display: block;
+}
+.phonesheet .editing .editformular {
+	display: table-row;
+}
+.phonesheet .editing .viewformular {
+	display: none;
+}
+
+.device_header th {
+	font-weight: normal;
+}

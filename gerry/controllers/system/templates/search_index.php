@@ -1,0 +1,1 @@
+<?=$this->render_partial('search', array('needle' => isset($needle)?$needle:''))?>

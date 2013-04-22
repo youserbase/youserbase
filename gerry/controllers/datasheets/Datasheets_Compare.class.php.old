@@ -1,0 +1,114 @@
+<?php
+class Datasheets_Compare extends Controller
+{
+	private $mod_values = array(0, 1, 2, 3);
+
+	public function Index()
+	{
+		if (isset($_REQUEST['action']) and $_REQUEST['action']=='remove')
+		{
+			Dropbox::Remove( $_POST['compare'] );
+			if (isset($_REQUEST['return_to']))
+			{
+				FrontController::DirectRelocate($_REQUEST['return_to']);
+			}
+		}
+
+
+		if(!Session::Get('compare') && !isset($_POST['compare']))
+		{
+			Dobber::ReportError('NO_DEVICES_IN_COMPARELIST');
+			if(!isset($_GET['device_id']))
+			{
+				FrontController::Relocate();
+			}
+			FrontController::Relocate('datasheet', array('device_id' => $_GET['device_id']));
+		}
+		else if(isset($_POST['compare']))
+		{
+			Session::Set('compare', $_POST['compare']);
+		}
+		if(Session::Get('compare'))
+		{
+			$device_ids = Session::Get('compare');
+		}
+		elseif (isset($_GET['device_id']))
+		{
+			$device_ids = array($_GET['device_id']);
+		}
+		if (isset($_REQUEST['tab']))
+		{
+			$this->datasheet($_REQUEST['tab']);
+		}
+
+		$template = $this->get_template(true);
+		if(count($device_ids) == 1)
+		{
+			$device_data = $this->getHeadData(reset($device_ids));
+			$template->assign('explicit_manufacturer', reset($device_data['manufacturer_name']));
+			$template->assign('explicit_model', reset($device_data['device_name']));
+		}
+		$template->assign('device_ids', $device_ids);
+		$template->assign('sheet' , sheetConfig::$sheet);
+	}
+
+	private function getHeadData($device_id)
+	{
+		$device_information = investigator::getDeviceInformation($device_id);
+		if($tables = investigator::getTablesByID($device_id))
+		{
+			$this->components = investigator::getComponentsByID($tables);
+		}
+		return $device_information;
+	}
+
+	public function datasheet($tab = null)
+	{
+		if(!isset($_GET['device_id']))
+		{
+			$device_ids = Session::Get('compare');
+		}
+		else
+		{
+			$device_ids = array($_GET['device_id']);
+		}
+
+		if($tab === null && isset($_GET['tab']))
+		{
+			$tab = $_GET['tab'];
+		}
+
+		$allPrecon = investigator::getAllPreconditionTables();
+
+		foreach ($allPrecon as $table)
+		{
+			$precon = new preconditionData();
+			$preconditions[$table] = $precon->getPreconditionsData($table);
+		}
+
+		foreach($device_ids as $device_id)
+		{
+			$device_data = investigator::getDeviceInformation($device_id);
+			$main_types[$device_id] = $device_data['main_type'];
+			$device_names[$device_id] = $device_data['device_name'];
+			$manufacturer_names[$device_id] = $device_data['manufacturer_name'];
+			$count[$device_id] = ratingBuilder::startBuildDeviceRating($device_id);
+			$tmp = array(null, null);
+			$tables = investigator::getTablesByID($device_id);
+			$components = investigator::getComponentsByID($tables);
+			$data[$device_id] = phoneConfig::startDataSheetBuilding($preconditions, $components, $tab, $device_id, 'compare');
+			$device_data[$device_id] = $this->getHeadData($device_id);
+		}
+		$rating = getratings::rating($device_ids);
+		$number_of_ratings = getratings::get_number_of_ratings($device_ids);
+		$template = $this->get_template(true);
+		$template->assign('tab', $tab);
+		$template->assign('data' , $data);
+		$template->assign('sheet', sheetConfig::$sheet);
+		$template->assign('device_ids', $device_ids);
+		$template->assign('device_data', $device_data);
+		$template->assign('rating', $rating);
+		$template->assign('number_of_ratings', $number_of_ratings);
+	}
+}
+?>

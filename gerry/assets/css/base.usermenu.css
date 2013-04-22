@@ -1,0 +1,81 @@
+.user .menu .r0 a {
+		background: url(/*[[ASSETS:images/famfamfam/rainbow.png]]*/) no-repeat center left;
+}
+.user .menu .r1 a {
+		background: url(/*[[ASSETS:images/famfamfam/key.png]]*/) no-repeat center left;
+}
+.user .menu .r2 a {
+		background: url(/*[[ASSETS:images/famfamfam/user_edit.png]]*/) no-repeat center left;
+}
+.user .menu .r3 a {
+		background: url(/*[[ASSETS:images/famfamfam/page_white_wrench.png]]*/) no-repeat center left;
+}
+.user .menu .r4 a {
+		background: url(/*[[ASSETS:images/famfamfam/user_go.png]]*/) no-repeat center left;
+}
+.community .menu .r0 a {
+		background: url(/*[[ASSETS:images/famfamfam/email.png]]*/) no-repeat center left;
+}
+.admin .menu .r0 a {
+		background: url(/*[[ASSETS:images/famfamfam/computer_edit.png]]*/) no-repeat center left;
+}
+.admin .menu .r1 a {
+		background: url(/*[[ASSETS:images/famfamfam/group.png]]*/) no-repeat center left;
+}
+.admin .menu .r2 a {
+		background: url(/*[[ASSETS:images/famfamfam/sitemap.png]]*/) no-repeat center left;
+}
+.admin .menu .r3 a {
+		background: url(/*[[ASSETS:images/famfamfam/phone_sound.png]]*/) no-repeat center left;
+}
+.admin .menu .r4 a {
+		background: url(/*[[ASSETS:images/famfamfam/database_save.png]]*/) no-repeat center left;
+}
+.admin .menu .r5 a {
+		background: url(/*[[ASSETS:images/famfamfam/comment_edit.png]]*/) no-repeat center left;
+}
+.admin .menu .r6 a {
+		background: url(/*[[ASSETS:images/famfamfam/server_lightning.png]]*/) no-repeat center left;
+}
+.admin .menu .r7 a {
+		background: url(/*[[ASSETS:images/famfamfam/feed.png]]*/) no-repeat center left;
+}
+.admin .menu .r8 a {
+		background: url(/*[[ASSETS:images/famfamfam/plugin_edit.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r0 a {
+		background: url(/*[[ASSETS:images/famfamfam/box.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r1 a {
+		background: url(/*[[ASSETS:images/famfamfam/add.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r2 a {
+		background: url(/*[[ASSETS:images/famfamfam/brick.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r3 a {
+		background: url(/*[[ASSETS:images/famfamfam/chart_curve.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r4 a {
+		background: url(/*[[ASSETS:images/famfamfam/bomb.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r5 a {
+		background: url(/*[[ASSETS:images/famfamfam/sitemap.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r6 a {
+		background: url(/*[[ASSETS:images/famfamfam/comments.png]]*/) no-repeat center left;
+}
+.device_administration .menu .r7 a {
+		background: url(/*[[ASSETS:images/famfamfam/magnifier.png]]*/) no-repeat center left;
+}
+.test .menu .r0 a {
+		background: url(/*[[ASSETS:images/famfamfam/plugin.png]]*/) no-repeat center left;
+}
+.test .menu .r1 a {
+		background: url(/*[[ASSETS:images/famfamfam/bug.png]]*/) no-repeat center left;
+}
+.beta .menu .r0 a {
+		background: url(/*[[ASSETS:images/famfamfam/page_white_stack.png]]*/) no-repeat center left;
+}
+.beta .menu .r1 a {
+		background: url(/*[[ASSETS:images/famfamfam/thumb_up]]*/) no-repeat center left;
+}

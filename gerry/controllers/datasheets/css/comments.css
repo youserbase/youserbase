@@ -1,0 +1,42 @@
+ul.lang_list > li {
+	list-style-type: none;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 49px;
+} 
+.offensive_comment {
+	cursor: pointer;
+	float: right;
+	width: auto;
+	margin: -15px 75px 0 0;
+} 
+.add_comment {
+} 
+.add_lang {
+	cursor: pointer;
+}
+
+.comments_control .disabled{
+opacity:0.3;
+}
+.comments_search {
+	margin: 8px 0;
+}
+.comments_search input {
+	width: 300px;
+}
+.comments_interface h4 {
+	margin: 4px 0;
+}
+.comments_interface div {
+	margin: 5px 0;
+}
+.comments_interface div form {
+	margin: 8px 0;
+}
+
+.comment_url{
+	display:none;
+	visibility:hidden;
+}

@@ -1,0 +1,14 @@
+#content a:link, #search_results a:link {
+	color: #195cb1 !important;
+}
+#content a:visited, #search_results a:visited {
+	color: #7F5cb1 !important;
+}
+#content a:active, #content a:focus, #content a:hover, #search_results a:active, #search_results a:focus, #search_results a:hover {
+	background-color: #EEF8FB !important;
+/*
+	border-bottom: 1px dotted #666 !important;
+*/
+	color: #E6000F !important;
+	text-decoration: none !important;
+}

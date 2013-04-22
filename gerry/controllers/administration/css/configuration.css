@@ -1,0 +1,19 @@
+#administration_configuration_index #configuration {
+	border-top: 1px solid black;
+	list-style-type: none;
+}
+#administration_configuration_index #configuration li {
+	border: 1px solid black;
+	border-top: none;
+}
+#administration_configuration_index #configuration a.head {
+	background: none url(/*[[ASSETS:images/famfamfam/bullet_toggle_plus.png]]*/) left center no-repeat;
+	cursor: pointer;
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-left: 16px;
+}
+#administration_configuration_index #configuration .selected a.head {
+	background-image: url(/*[[ASSETS:images/famfamfam/bullet_toggle_minus.png]]*/);
+}

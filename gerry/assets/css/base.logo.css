@@ -1,0 +1,43 @@
+#logo {
+		position: absolute;
+		top: -42px;
+		left: 0px;
+		display: block;
+		width: 166px;
+		height: 42px;
+		overflow: hidden;
+		background: url(/*[[ASSETS:images/youserbase_logo_topwest.gif]]*/) no-repeat;
+}
+#logo.closed_beta {
+		position: absolute;
+		display: block;
+		height: 47px;
+		left: -33px;
+		overflow: hidden;
+		top: -58px;
+		width: 201px;
+		overflow: hidden;
+		background: url(/*[[ASSETS:images/youserbase_logo_topwest_closed_beta.gif]]*/) no-repeat;
+}
+#logo.closed_beta:hover {
+		background-position: 0 -45px;
+}
+#logo.beta {
+		height: 47px;
+		left: -30px;
+		overflow: hidden;
+		position: absolute;
+		top: -47px;
+		width: 201px;
+		display: block;
+		background: url(/*[[ASSETS:images/youserbase_logo_topwest_beta.gif]]*/) no-repeat 0 -5px;
+}
+#logo.beta:hover {
+		background-position: 0 -50px;
+}
+#logo:hover {
+		background-position: 0 -45px;
+}
+#logo img {
+		visibility: hidden;
+}

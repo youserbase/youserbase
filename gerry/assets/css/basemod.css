@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Template for designing a screen layout
+ * (de) Gestaltungsvorlage für die Erstellung eines Screenlayouts
+ *
+ * @copyright       Copyright 2005-2008, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.0.6
+ * @revision        $Revision: 202 $
+ * @lastmodified    $Date: 2008-06-07 14:29:18 +0200 (Sa, 07 Jun 2008) $
+ */
+@media screen, projection {
+	/*------------------------------------------------------------------------------------------------------*/
+	/**
+	 * Design of the Basic Layout | Gestaltung des YAML Basis-Layouts
+	 *
+	 * @section layout-basics
+	 */
+	/* Page margins and background | Randbereiche & Seitenhintergrund */
+body {
+	background: #444;
+	color: #444;
+}
+.clr {
+	clear:both;
+}
+.h100 {
+	height: 100px;
+}
+.hover {
+	opacity: 0.5 !important;
+}
+.hover:hover {
+	opacity: 1.0 !important;
+}
+.smallhint {
+	background: url(/*[[ASSETS:images/famfamfam/bullet_blue.png]]*/) no-repeat 2px center;
+	font-size: 9px;
+	padding-left: 18px;
+}
+#language_toggle {
+	display: inline;
+	cursor: pointer;
+}
+/* Layout: Width, Background, Border | Layout: Breite, Hintergrund, Rahmen */
+#stage {
+	background: white;
+	padding: 0 0 0px 0;
+	min-height: 1000px;
+}
+
+	/* Layout: Width, Background, Border | Layout: Breite, Hintergrund, Rahmen */
+#page_margins {
+	margin: auto;
+	position: relative;
+	width: 950px;
+}
+#page {
+}
+
+	/* Design of the Main Layout Elements | Gestaltung der Hauptelemente des Layouts */
+#header {
+	height: 36px;
+	overflow: visible;
+}
+#searchbar {
+	margin: 14px 0 15px 1px;
+	padding: 8px 0 0 0;
+	position: relative;
+}
+#query {
+	background: url(/*[[ASSETS:images/famfamfam/magnifier.png]]*/) no-repeat 10px center;
+	border: 1px solid #333;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #ccc;
+	padding: 4px 8px 5px 35px;
+	width: 590px;
+	font: 900 16px/16px Arial, Helvetica, sans-serif;
+}
+#query:focus {
+	color: #000;
+}
+
+
+#searchbar .query_ads {
+	background: url(/*[[ASSETS:images/famfamfam/magnifier_zoom_in.png]]*/) no-repeat center left;
+	color: #69c;
+	font-weight: 900;
+	left: 52px;
+	padding: 0 0 0 20px;
+	position: relative;
+	top: -3px;
+}
+#top_bar {
+	margin: 50px 0 18px 0;
+	position: relative;
+	z-index: 10;
+}
+#main {
+	background: #fff;
+	margin-top: 20px;
+	padding-top: 1px;
+}
+#signin_menu {
+	color: #fff;
+	position: absolute;
+	right: 13px;
+	top: 5px;
+	z-index: 2;
+}
+#signin_menu p {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#signin_menu p a {
+	color: #3DAAFF;
+	font-weight: 900;
+	padding: 0 5px;
+}
+#signin_menu p a.red {
+	color: red;
+	font-weight: 300;
+	text-decoration: none;
+}
+#signin_menu p a.white {
+	color: white;
+	font-weight: 300;
+	text-decoration: none;
+}
+#signin_menu p a.white:hover {
+	text-decoration: underline;
+}
+#breadnavigation {
+	left: 40px;
+	position: relative;
+	top: 6px;
+}
+#breadnavigation a {
+	color: #EE7900;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+	/*------------------------------------------------------------------------------------------------------*/
+	/**
+	 * Formatting of the Content Area | Formatierung der Inhaltsbereichs
+	 *
+	 * @section layout-main
+	 */
+#col1 {
+}
+#col1_content {
+}
+#col2 {
+}
+#col2_content {
+}
+#col3 {
+	margin: 0 220px 0 0;
+}
+#col3_content {
+}
+
+	/*------------------------------------------------------------------------------------------------------*/
+	/**
+	 * Design of Additional Layout Elements | Gestaltung weiterer Layoutelemente
+	 *
+	 * @section layout-misc
+	 */
+#bulk {
+	background: #182C4A;
+	border-bottom: 1px solid #222;
+}
+#bulk p {
+	font-size: 10px;
+	margin: 0;
+	padding: 2px 0 2px 30px;
+	text-align: left;
+	color: #C1D2EB;
+}
+#bulk a {
+	color: #C1D2EB;
+	text-decoration: none;
+}
+#bulk a:hover, #bulk a:active {
+	text-decoration: underline;
+}
+#loginheader {
+	background: #F4EFEC;
+	border-bottom: 8px solid #fff;
+}
+#loginheader div {
+	margin: auto;
+	padding: 40px 0;
+	width: 950px;
+}
+#loginheader div p {
+	margin: 0;
+	padding: 0;
+}
+
+
+#advertisement_header {
+	height: 90px;
+	padding: 5px 0;
+	text-align: right;
+	margin-bottom: -50px;
+}
+#advertisement {
+	position: absolute;
+	right: 0px;
+	top: 48px;
+}
+.pagination {
+	text-align: right;
+}
+.menu a {
+	padding-left: 24px !important;
+}
+#data_sheets {
+	width: 100%;
+	/*overflow: auto; TG */
+}
+
+#javascript_required {
+	background-color: #ffc;
+	border-bottom: 1px solid black;
+	padding: 5px 0;
+	text-align: center;
+}
+#top_slider {
+	background-color: #fff;
+	border: 3px double #ccc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-radius-bottomleft: 5px;
+	-webkit-border-radius-bottomright: 5px;
+	border-top: 0;
+	float: right;
+	margin-bottom: 25px;
+	margin-right: 2px;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+	width: 390px;
+	z-index: 100;
+}
+#top_slider .label {
+	background-color: #888;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	bottom: -10px;
+	color: #fff;
+	height: 16px;
+	padding: 2px 6px;
+	position: absolute;
+	right: 8px;
+	z-index: 10;
+}
+}

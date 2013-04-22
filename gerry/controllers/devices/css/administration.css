@@ -1,0 +1,24 @@
+.picture_holder dt {
+	clear: left;
+}
+.picture_holder ul, .picture_holder li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.picture_holder li {
+	background-color: #fff;
+	float: left;
+	height: 64px;
+	margin: 1px;
+	width: 64px;
+}
+.picture_holder .placeholder {
+	background-color: #ccc;
+	border: 1px dotted #888;
+	margin: 0;
+}
+.picture_holder .ui-sortable-helper {
+	border: 3px double #fc4;
+	margin: -2px;
+}

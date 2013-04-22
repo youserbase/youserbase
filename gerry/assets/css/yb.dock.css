@@ -1,0 +1,115 @@
+#dock {
+	position: fixed;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
+	background-color: #FFF;
+	height: 26px;
+	border: 1px solid black;
+	border-bottom: 0;
+	overflow: visible;
+	z-index: 998;
+	background: url(/*[[ASSETS:images/_t/_css/nav_top_back.gif]]*/) repeat-x scroll 0 -7px;
+}
+#dock div, #dock div a {
+	color: #fff;
+}
+#dropbox {
+	border-left: 1px solid black;
+	bottom: 0;
+	padding: 5px 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 250px;
+}
+#dropbox.active {
+	background-color: orange;
+}
+#dropbox.hovered {
+	background-color: green;
+}
+#dropbox_content {
+	background-color: #eee;
+	border: 1px solid black;
+	bottom: 0;
+	border-bottom: 0;
+	display: none;
+	left: -1px;
+	margin: 0;
+	padding: 30px 9px 60px;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+#dropbox_content .device a {
+	color: #888 !important;
+}
+#dropbox_devices {
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+}
+#dropbox_devices li {
+	margin: 0;
+	padding: 0;
+}
+#dropbox_options {
+	background-color: #eee;
+	padding: 5px;
+}
+#dock .indicators {
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 0;
+	margin: 0;
+}
+#dock .indicators li {
+	display: inline;
+	float: left;
+	border-right: 1px solid gray;
+	margin: 0;
+	padding: 0 5px 0 5px;
+}
+#dock .indicators img {
+	vertical-align: middle;
+}
+#rotate_dock {
+	position: absolute;
+	left: 3px;
+	top: 3px;
+}
+#dock a {
+	text-decoration: none;
+}
+#dock a:hover {
+	text-decoration: underline;
+}
+#view_container {
+	position: absolute;
+	left: 20px;
+}
+#view_container .view {
+	padding: 3px;
+	height: 20px;
+}
+
+#view_container .view.translate ul {
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	background-color: lightblue;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 26px;
+	height: 400px;
+	overflow: auto;
+}
+#view_container .view.translate li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: inline;
+	min-width: 25%;
+}

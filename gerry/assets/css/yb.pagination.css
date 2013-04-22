@@ -1,0 +1,66 @@
+/* PAGINATION */
+.pagination {
+	margin-top: -1px;
+	text-align: right;
+}
+.pagination span {
+	background-color: #fff;
+	border: 1px solid black;
+	display: inline-block;
+	margin: 0px;
+	margin-right: 2px;
+	padding: 3px 6px;
+	vertical-align: middle;
+}
+.pagination .previous, .pagination .next {
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 0;
+	font-size: 100px;
+	height: 16px;
+	overflow: hidden;
+	padding-left: 0;
+	padding-right: 0;
+	width: 16px;
+}
+.pagination .previous {
+	background-image: url(/*[[ASSETS:images/famfamfam/resultset_previous.png]]*/);
+}
+.pagination .next {
+	background-image: url(/*[[ASSETS:images/famfamfam/resultset_next.png]]*/);
+}
+.pagination .inactive {
+	border: 0;
+	color: #aaa;
+	margin: 1px;
+	visibility: hidden;
+}
+.pagination .inactive:hover {
+	background-color: inherit;
+}
+.pagination .current {
+	background-color: #ffa;
+}
+.pagination span:hover {
+	background-color: #fca;
+}
+.pagination .divider {
+	position: relative;
+}
+div.pagination br {
+	clear: left;
+}
+.pagination .divider .more {
+	background-color: #fff;
+	border: 1px solid black;
+	left: -1px;
+	max-width: 100px;
+	padding: 3px;
+	position: absolute;
+	top: 100%;
+	width: 100px;
+	z-index: 1000;
+}
+.pagination .divider a:hover {
+	background: none !important;
+}

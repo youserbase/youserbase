@@ -1,0 +1,87 @@
+.systempage {
+	position: relative;
+	padding-bottom: 20px;
+}
+.systempage.rbox {
+	padding-bottom: 0;
+}
+.systempage.missing {
+	background-color: #fcc;
+}
+.systempage.editing {
+	background-color: #fff !important;
+	padding-top: 5px;
+	z-index: 1000;
+}
+.systempage p {
+	padding: 0 10px;
+}
+
+.systempage p.open {
+	display: block;
+}
+.systempage p.closed {
+	display: none;
+}
+
+.systempage .expando {
+	background: #e8e8e8 3px center no-repeat;
+	border-radius: 0;
+	color: #000;
+	-moz-border-radius: 0;
+	padding-left: 16px;
+	-webkit-border-radius: 0;
+}
+.systempage .expando.open {
+	background-image: url(/*[[ASSETS:images/ui/8f8f8f_7x7_arrow_down.gif]]*/);
+}
+.systempage .expando.closed {
+	background-image: url(/*[[ASSETS:images/ui/8f8f8f_7x7_arrow_right.gif]]*/);
+}
+
+.systempage.rbox .options {
+	background-color: #ddd;
+	border: 1px dashed #bbb;
+	border-bottom-left-radius: 5px !important;
+	border-top: 0;
+	border-right: 0;
+	bottom: 0;
+	color: #000;
+	float: right;
+	left: 0;
+	margin: -1px -7px 10px 10px;
+	-moz-border-radius-bottomleft: 5px !important;
+	padding: 5px;
+	position: relative;
+	-webkit-border-bottom-left-radius: 5px !important;
+	width: auto;
+}
+.systempage .options {
+	background-color: #444;
+	border-bottom: 1px dashed #000;
+	color: #fff;
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+.systempage:hover .options {
+	display: block;
+}
+.systempage.editing:hover .options {
+	display: none;
+}
+.systempage .options br {
+	display: none;
+}
+.systempage.rbox .options br {
+	display: block;
+}
+
+#page_sitenews {
+	background-color: #ffd;
+}
+#page_sitenews h2 {
+	background-color: #ffd;
+	border-style: dashed;
+	border-width: 0 0 1px 0;
+}

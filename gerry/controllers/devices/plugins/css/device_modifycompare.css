@@ -1,0 +1,20 @@
+#mod_modifycompare table{
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+#mod_modifycompare select{
+	width: 60px;
+}
+#mod_modifycompare td.action{
+	text-align: right;
+}
+#mod_modifycompare button{
+}
+#mod_modifycompare{
+	
+}
+#mod_modifycompare .reset{
+	position: relative;
+	top: -29px;
+	width: 105px;
+}

@@ -1,0 +1,80 @@
+.edit_datasheet {
+	position: relative;
+	top: 0px;
+	text-align: right;
+}
+.edit_datasheet a {
+	display: inline-block;
+	background: url(/*[[ASSETS:images/iconsmixed/edit_32_32.png]]*/) no-repeat right center;
+	padding: 10px 40px 10px;
+}
+.component_rating_canvas, #data_sheets div.th.component_build_in {
+	width: 140px;
+	overflow: visible;
+	position: absolute;
+}
+.component_rating {
+	position: relative;
+	top: 2px;
+}
+.data_label {
+	width: 150px;
+}
+.phonesheet td.table_banner {
+	padding: 2px 0;
+}
+.data_input {
+	width: 150px;
+}
+#checkboxes {
+	left: 84px;
+	position: absolute;
+	top: 351px;
+}
+#data_sheets table{
+	table-layout: auto;
+	width: 100%;
+}
+#data_sheets td, #data_sheets table, #data_sheets tr, #data_sheets th {
+	background: #fff;
+	color: #333;
+	border: 1px solid white;
+	border-collapse: collapse;
+	vertical-align: top;
+}
+#data_sheets td.r0 {
+	width: 200px;
+}
+#data_sheets .a0 td.r0 {
+	background: #ddd;
+}
+#data_sheets .a1 td.r0 {
+	background: #eee;
+}
+#data_sheets .a0 td {
+	background: #ccc;
+}
+#data_sheets .a1 td {
+	background: #ddd;
+}
+
+#data_sheets div.th {
+	padding: 0.5em;
+/*
+	border-top: 1px dotted #ddd;
+*/
+	min-height: 16px;
+	background: #fff;
+	color: #69c;
+	font-size: 14px;
+	position: relative;
+}
+#data_sheets .th img {
+	position: absolute;
+	right: 7px;
+	top: 8px;
+	cursor: pointer;
+}
+#data_sheets .r0 div.th {
+	background: #fff;
+}

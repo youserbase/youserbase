@@ -1,0 +1,82 @@
+.ratingstar {
+	cursor: pointer;
+	width: 300px;
+}
+.ratingstar.bigstar {
+	width: 300px;
+}
+.ratingstars_mask {
+/*
+	background: url(/*[[ASSETS]]* /images/rating/ratingstar.png);
+*/
+	background: url(http://assets.youserbase.org/images/rating/ratingstar.png);
+	bottom: 0;
+	height: 17px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+.ratingstar.bigstar .ratingstars_mask {
+/*
+	background: url(/*[[ASSETS]]* /images/rating/ratingstarbig.png);
+*/
+	background: url(http://assets.youserbase.org/images/rating/ratingstarbig.png);
+	height: 32px;
+}
+.ratingstars_average {
+	background: blue;
+	height: 17px;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.ratingstar_grey {
+	background: #888 !important;
+}
+.ratingstar_used {
+	background: red !important;
+}
+.ratingstars_user {
+	background: red;
+	height: 17px;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.ratingstars_peak {
+	background: orange;
+	height: 17px;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.ratingstars {
+	background: #ddd;
+	height: 17px;
+	overflow: hidden;
+	position: relative;
+	width: 85px;
+}
+.ratingstar.bigstar .ratingstars_user, .ratingstar.bigstar .ratingstars_peak, .ratingstar.bigstar .ratingstars_average {
+	height: 32px;
+}
+.ratingstar.bigstar .ratingstars {
+	height: 32px;
+	width: 160px;
+}
+.ratingstar .header {
+	color: blue;
+	font: 600 normal 16px / 16px Arial, Helvetica, sans-serif;
+}
+.ratingstar .indicator {
+	color: #888;
+	font: 300 normal 12px / 12px Arial, Helvetica, sans-serif;
+}
+.ratingstar .ratingstars_user {
+	display: none;
+}
+.ratingstar.isdone .ratingstars_user {
+	display: block;
+}

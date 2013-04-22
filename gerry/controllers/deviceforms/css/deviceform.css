@@ -1,0 +1,41 @@
+#dropform
+{
+	margin-left:300px;
+	position:absolute;
+	top:3px;
+}
+
+.functions
+{
+
+}
+
+.equipment
+{
+
+}
+
+.droppable-active 
+{
+	outline: 1px solid black;
+	background: yellow;
+	opacity: 1.0;
+}
+.droppable-hover 
+{
+	outline: 1px dotted black;
+	background: green;
+}
+
+#preconditions
+{
+	
+}
+
+.preconditions
+{
+	position: relative;
+	top: 5px;
+	height: 17px;
+	left: 15px;
+}

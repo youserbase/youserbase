@@ -1,0 +1,7 @@
+#plugin_lovehate .content, #plugin_deviceowner .content {
+	text-align: center;
+}
+#plugin_lovehate a.like, #plugin_lovehate a.dislike, #plugin_deviceowner a.mine {
+	font-weight: bold;
+	white-space: nowrap;
+}

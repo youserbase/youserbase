@@ -1,0 +1,36 @@
+ErrorDocument 404 "dispatcher.php"
+
+RewriteEngine On
+RewriteBase /portal/
+
+RewriteCond %{SERVER_NAME} ^[^.]+\.[^.]+$ [NC]
+RewriteRule .* http://www.%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+RewriteRule ^translations.js$ translations.js.php [QSA,L]
+RewriteRule ^onload\.js$ harvester.php?type=jsload [QSA,L]
+RewriteRule ^additional\.(css|js)$ harvester.php?type=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Device/(.+)/photos\.rss$ index.php?module=Devices&controller=ImageGallery&method=Cooliris&device_id=$1 [L]
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)\.(css|js)$ assets/$2/$1.$2 [QSA,L,NS]
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(assets/)?(images/)?(.*)\.(png|gif|jpe?g)$ http://assets.youserbase.org/images/$3.$4 [R=302,L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteRule ^(.*\.(css|js|gif|jpe?g|png))$ harvester.php?type=$2&files=$1 [QSA,L,R]
+
+# HARDCODED, needs to be transfered
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/Plugin/([^/]+)/([^/]+)$ index.php?preferred_language=$1&module=System&controller=Plugins&method=Call&plugin=$2&action=$3 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Plugin/([^/]+)/([^/]+)$ index.php?module=System&controller=Plugins&method=Call&plugin=$1&action=$2 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)(\.html?)? index.php?module=$2&controller=$3&method=$4&preferred_language=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)(\.html?)? index.php?module=$1&controller=$2&method=$3 [QSA,L]

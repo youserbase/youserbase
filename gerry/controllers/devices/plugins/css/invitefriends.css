@@ -1,0 +1,15 @@
+#plugin_invitefriends .rbox {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	overflow: visible;
+}
+#plugin_invitefriends .content {
+	min-height: 91px;
+}
+#plugin_invitefriends {
+	background: url(/*[[ASSETS:images/_t/inviting_door.gif]]*/) 127px 28px no-repeat;
+}
+#plugin_invitefriends .invitation_text {
+	padding: 0 43px 10px 0;
+}

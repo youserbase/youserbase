@@ -1,0 +1,72 @@
+button, .button {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	background: #888 url(/*[[ASSETS:images/_t/_css/gradient_grey.gif]]*/) repeat-x;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-decoration: none;
+	font: 300 14px/14px Arial, Helvetica, sans-serif;
+	color: #333 !important;
+	cursor: pointer !important;
+}
+
+button span, .button span {
+	background: url(/*[[ASSETS:images/famfamfam/accept.png]]*/) no-repeat 6px 0px;
+	padding: 0px 10px 0 26px;
+	color: #333 !important;
+	font: 300 14px/18px Arial, Helvetica, sans-serif;
+	display: inline;
+}
+button.mini span, .button.mini span{
+	font: 300 11px/19px Arial, Helvetica, sans-serif;
+	padding-bottom: 2px;
+	
+}
+/* höhenausgleich aufgrund von fehlverhalten des button-objects im IE/FF */
+.button span {
+	font: 300 14px/19px Arial, Helvetica, sans-serif;
+}
+button span span, a span span {
+	background-image: none !important;
+	padding: 0 !important;
+}
+
+button:hover, .button:hover {
+	background-position: 0 -50px;
+	border: 1px solid #444;
+}
+
+button.cancel span, .button.cancel span {
+	background-image: url(/*[[ASSETS:images/famfamfam/cancel.png]]*/);
+}
+
+button.send span, .button.send span {
+	background-image: url(/*[[ASSETS:images/famfamfam/email.png]]*/);
+}
+
+button.add span, .button.add span {
+	background-image: url(/*[[ASSETS:images/famfamfam/add.png]]*/);
+}
+button.load span, .button.load span {
+	background-image: url(/*[[ASSETS:images/famfamfam/disk_black.png]]*/);
+}
+button.edit span, .button.edit span {
+	background-image: url(/*[[ASSETS:images/famfamfam/pencil.png]]*/);
+}
+button.bin span, .button.bin span {
+	background-image: url(/*[[ASSETS:images/famfamfam/bin_closed.png]]*/);
+}
+button.delete span, .button.delete span {
+	background-image: url(/*[[ASSETS:images/famfamfam/delete.png]]*/);
+}
+button.bell_delete span, .button.bell_delete span {
+	background-image: url(/*[[ASSETS:images/famfamfam/bell_delete.png]]*/);
+}
+button.bell_add span, .button.bell_add span {
+	background-image: url(/*[[ASSETS:images/famfamfam/bell_add.png]]*/);
+}
+

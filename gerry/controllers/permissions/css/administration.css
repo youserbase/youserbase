@@ -1,0 +1,6 @@
+table#permissions td.controller {
+	text-indent: 20px;
+}
+table#permissions td.method {
+	text-indent: 40px;
+}

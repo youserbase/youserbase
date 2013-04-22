@@ -1,0 +1,54 @@
+#device_image_gallery .image {
+	text-align: center;
+}
+#device_image_gallery .controls {
+	border-bottom: 1px dotted #ccc;
+	text-align: center;
+}
+#device_image_gallery .controls a:hover, #device_image_gallery .controls a:active {
+	background-color: inherit !important;
+	border: 0 !important;
+}
+#device_image_gallery .image:hover img {
+	border: 1px dashed #ccc !important;
+	margin: 0;
+}
+#device_image_gallery .controls img {
+	border: 0;
+	margin: 1px;
+	vertical-align: middle;
+}
+#device_image_gallery .disabled img {
+	opacity: 0.3;
+}
+#device_image_gallery .current img {
+	border: 1px solid black;
+	margin: 0;
+}
+
+#upload_form label a {
+	float: right;
+	margin-right: 8px;
+}
+#image_editor fieldset {
+	position: relative;
+}
+#image_editor .prev {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+#image_editor .next {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+#image_editor .counter {
+	text-align: center;
+}
+#image_editor .images {
+	float: right;
+}
+#image_editor .images img {
+	vertical-align: top;
+}

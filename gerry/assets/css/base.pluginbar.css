@@ -1,0 +1,19 @@
+.plugin_bar ul, .plugin_bar ul li {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+} 
+.plugin_bar ul li {
+		float: left;
+		width: 49px;
+		overflow: hidden;
+		text-align: center;
+} 
+.plugin_bar ul li a {
+		line-height: 11px;
+		font-size: 10px;
+		position: relative;
+} 
+.plugin_bar rbox_k {
+		padding: 0 2px 10px 2px;
+}

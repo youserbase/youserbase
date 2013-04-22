@@ -1,0 +1,10 @@
+ul.blog {
+	margin: 0;
+	padding: 0;
+}
+ul.blog .timestamp {
+	color: #888;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+}

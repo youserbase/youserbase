@@ -1,0 +1,18 @@
+/*
+ * Tim Gebken
+ * 25.08.2009
+
+*/
+.contentblock {
+	margin: 3px 0px 8px;
+	padding: 5px 0px;
+	border-bottom: 1px dotted #ccc;
+	border-top: 1px dotted #ccc;
+}
+.contentblock span.contentblock_hori {
+	display: inline-block;
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+	margin: 0 0px 0 -1px;
+	padding: 0 3px 0 3px;
+}

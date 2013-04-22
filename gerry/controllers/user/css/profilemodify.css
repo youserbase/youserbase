@@ -1,0 +1,7 @@
+#pro_mod_picture_upload {
+	margin: 0 0 0 8px;
+}
+#pro_mod_picture_upload img {
+	border: 1px solid #ccc;
+	margin: 0 auto 10px 0;
+}

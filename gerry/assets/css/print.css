@@ -1,0 +1,11 @@
+@media print
+{
+  #dock, #bulk, #advertisment, #top_bar, .sliding_nav, #piclens_enabled, #debug_header, #ui-datepicker-div, #data_sheets_global_box{
+  	display: none !important;
+  }
+  #page_margins {
+  	width: auto;
+	margin: 0;
+	padding: 0;
+  }
+}

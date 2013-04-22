@@ -1,0 +1,24 @@
+.plugin-list {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+.plugin-list li:nth-of-type(2n) {
+	background-color: #eee;
+}
+.plugin-list li:nth-of-type(2n+1) {
+	background-color: #fff;
+}
+.plugin-list label {
+	display: inline-block !important;
+	margin-left: 10px;
+	width: 150px;
+}
+.plugin-list input[type=text] {
+	margin: 2px;
+	width: 200px;
+}
+#plugin_select img {
+	float: right;
+}

@@ -1,0 +1,53 @@
+.edit{
+	cursor: pointer;
+	float: right;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.register_lightbox {
+	float:right;
+	font-weight:bold;
+}
+
+
+#register a{
+	background: url(/*[[ASSETS:images/_t/signin_asap.gif]]*/) 115px 15px no-repeat;
+	color: black;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+#register a:hover {
+	background-position: -78px 12px
+}
+
+/**leider wird noch eine redundante rbox geladen
+ * willms: rbox kommt bald weg
+ */
+#register .rbox {
+	border-style: none;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+}
+#register h3 {
+	color: #000;
+	background: transparent;
+	font: 900 19px/19px Arial, Helvetica, sans-serif;
+	letter-spacing: -0.5px;
+	margin: 0;
+	padding: 6px 4px 1px !important;
+}
+#register p {
+	background: transparent;
+	color: black;
+	font: 300 13px/15px Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 5px 56px 10px 2px;
+}
+#register a:hover p {
+	color: blue;
+	text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+#nav_top {
+	background: url(/*[[ASSETS:images/_t/_css/nav_top_back.gif]]*/) repeat-x 0 -6px;
+	border-radius: 5px;
+	height: 32px;
+	margin: 0;
+	-moz-border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	-webkit-border-radius: 5px;
+/*
+	margin: 50px 0 0 0;
+*/
+}
+#nav_top_k {
+	overflow: hidden;
+	position: relative;
+}
+#nav_top_k, #nav_top_k li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#nav_top_k li {
+	float: left;
+	padding: 0 2px 0 0;
+	position: relative;
+}
+#nav_top_k a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: white;
+	display: block;
+	line-height: 1.3em;
+	padding: 7px 30px 9px 30px;
+	text-decoration: none;
+}
+#nav_top_k a:hover {
+	background: url(/*[[ASSETS:images/_t/_css/nav_top_back.gif]]*/) repeat-x 0 bottom;
+	text-decoration: underline;
+}
+#nav_top_k .right {
+	float: right;
+}
+#nav_top_k .right a {
+	padding: 7px 15px 9px 15px;
+}
+#nav_top_k .plain {
+	color: white;
+	padding: 6px 15px 9px 15px;
+}
+#nav_top_k .plain a, #nav_top_k .plain span.raw {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #3DAAFF;
+	font-weight: 900;
+	padding: 0 5px;
+	display: inline;
+	padding: 0;
+}
+#nav_top_k .plain a:hover {
+	background: none;
+}
+#nav_top_k a.red {
+	color: red;
+	font-weight: 300;
+	text-decoration: none;
+}
+#nav_top_k div {
+	background: url(/*[[ASSETS:images/_t/_css/nav_top_delimiter.gif]]*/) repeat-x 0 top;
+	display: inline;
+	height: 24px;
+	position: absolute;
+	right: 0;
+	top: 4px;
+	width: 2px;
+}
+#nav_top_k_2 {
+}

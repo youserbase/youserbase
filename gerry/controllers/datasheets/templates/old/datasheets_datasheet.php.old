@@ -1,0 +1,46 @@
+<?if (isset($main_type)):?>
+	<?if($main_type == 'CELLPHONE'):?>
+		<?=$headsheet?>
+		<div id="data_sheet" class="flora">
+			<ul class="tabify">
+				<li><a title="common_sheet" href="#common_sheet"><phrase id="COMMON"/></a></li>
+				<li><a title="technology_sheet" href="#technology_sheet"><phrase id="TECHNOLOGY"/></a></li>
+				<li><a title="phone_sheet" href="#phone_sheet"><phrase id="PHONEFUNCTIONS"/></a></li>
+				<li><a title="media_sheet" href="#media_sheet"><phrase id="MEDIAFUNCTIONS"/></a></li>
+				<li><a title="office_sheet" href="#office_sheet"><phrase id="OFFICE"/></a></li>
+			</ul>
+		<div id="common_sheet">
+			<ul id="accordion_sheet" style="width: 250px;">
+				<?=$commonsheet?>
+			</ul>
+		</div>
+		<div id="technology_sheet">
+			<?=$technologysheet?>
+		</div>
+		<div id="phone_sheet">
+			<?=$phonesheet?>
+		</div>
+		<div id="media_sheet">
+			<?=$mediasheet?>
+		</div>
+		<div id="office_sheet">
+			<?=$officesheet?>
+		</div>
+	<?else:?>
+		<phrase id="<?=$errormessage?>"/>
+	<?endif?>
+	<?if(isset($device_id)):?>
+		<form id="deleteDevice" action="<?=FrontController::GetLink('deletedevice')?>" method="POST">
+			<dl>
+				<dt/>
+				<dd>
+					<input type="hidden" name="device_id" value="<?=$device_id?>"/>
+				</dd>
+				<dt/>
+				<dd>
+					<input type="submit" value_phrase="DELETE_DEVICE"/>
+				</dd>
+			</dl>
+		</form>
+	<?endif;?>
+<?endif?>

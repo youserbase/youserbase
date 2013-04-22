@@ -1,0 +1,29 @@
+ @charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+TG 09.2008
+ */
+@media all {
+
+#nav_top .on a, #nav_top .on strong {
+	padding-bottom: 7px;
+	padding-top: 8px;
+}
+#nav_top a, #nav_top strong {
+	padding: 7px 61px 7px 51px;
+}
+
+#nav_top a span{
+	padding-left: 21px;
+	background: url(../images/famfamfam/page_white_find.png) left center no-repeat;
+}
+#nav_top #showit a span{
+	background-image: url(../images/famfamfam/page_white_go.png);
+}
+#nav_top #sayit a span{
+	background-image: url(../images/famfamfam/comments.png);
+}
+
+
+}

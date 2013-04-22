@@ -1,0 +1,82 @@
+#stage {
+	padding: 0;
+}
+#page_margins {
+	padding-bottom: 40px;
+}
+.rbox .rbox_options {
+	float: right;
+}
+.phrase {
+	border-bottom: 1px dotted orange;
+	margin: 1px 1px 0 1px;
+}
+.untranslated.phrase {
+	border-bottom: 1px dashed orange;
+	color: red;
+}
+.phrase:hover {
+	border: 1px dotted orange;
+	cursor: help;
+	margin: 0;
+	outline: 1px dashed red;
+}
+.phrase .phrase_translator input {
+	background-color: #fff;
+	color: #000;
+}
+
+table .highlighted, table .highlighted td {
+	background-color: #ffc;
+}
+
+table thead tr th span.sort-icon {
+	display: none;
+	margin-left: 5px;
+}
+table .headerSortUp .sort-icon.asc, table .headerSortDown .sort-icon.desc {
+	display: inline;
+}
+
+.phrase_translator input {
+	padding: 0 2px;
+}
+
+.image.youtube.v90 {
+	height: 70px;
+	width: 90px;
+	margin-top: -9px;
+	overflow: hidden;
+}
+a.youtube.v90 {
+	border: 3px double #ccc;
+	display: block;
+	height: 52px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 90px;
+}
+a.youtube.v90:hover {
+	margin: 2px;
+	border: 1px solid #000;
+}
+
+.admin_panel {
+	background: #999;
+	padding: 3px;
+	padding-bottom: 40px;
+	position: relative;
+	-moz-box-shadow: #000 1px 1px 5px;
+}
+.admin_panel:before {
+	content: "admin";
+	position: absolute;
+	font-family: monospace;
+	font-variant: small-caps;
+	font-size: 50px;
+	opacity: 0.25;
+	color: #fff;
+	right: 5px;
+	bottom: 5px;
+}

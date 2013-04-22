@@ -1,0 +1,1 @@
+<?=$this->render_partial('component_view', array('contents' => $contents, 'tbodies' => $tbodies, 'tab' => $tab, 'table' => $table, 'device_id' => $device_id, 'rating' => $rating, 'body' => false, 'build_in' => $build_in, 'skip' => $skip))?>

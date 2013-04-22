@@ -1,0 +1,41 @@
+#plugin_signinasap a{
+	display: block;
+	margin: 0;
+	padding: 0;
+	background: url(/*[[ASSETS:images/_t/signin_asap.gif]]*/) 115px 15px no-repeat;
+	color: black;
+	text-decoration: none;
+}
+#plugin_signinasap a:hover {
+	background-position: -78px 12px
+}
+
+/**leider wird noch eine redundante rbox geladen
+ * willms: rbox kommt bald weg
+ */
+#plugin_signinasap .rbox {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	overflow: visible;
+}
+#plugin_signinasap h3 {
+	margin: 0;
+	padding: 6px 4px 1px!important;
+	font: 900 19px/19px Arial, Helvetica, sans-serif;
+	letter-spacing: -0.5px;
+	background: transparent;
+	color: black;
+}
+#plugin_signinasap p {
+	margin: 0px;
+	padding: 5px 56px 10px 2px;
+	font: 300 13px/15px Arial, Helvetica, sans-serif;
+	background: transparent;
+	color: black;
+}
+#plugin_signinasap a:hover p {
+	text-decoration: underline;
+	color: blue;
+}
+

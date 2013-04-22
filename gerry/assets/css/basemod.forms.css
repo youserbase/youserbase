@@ -1,0 +1,9 @@
+/*
+ * Tim Gebken 25.08.2009
+
+*/
+#shadowbox_content form.yform .type-text input,
+#shadowbox_content form.yform .type-text textarea,
+#shadowbox_content form.yform .type-select select { 
+	width: 97%;
+}

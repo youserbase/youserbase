@@ -1,0 +1,1 @@
+$(".ui-slider-1").slider();

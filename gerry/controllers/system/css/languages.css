@@ -1,0 +1,31 @@
+#language_list {
+	background: white;
+	list-style: none;
+	margin: 0;
+	padding: 2px;
+	z-index: 5;
+}
+#language_list li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 50%;
+}
+#language_list li a {
+	color: #888;
+	display: block;
+	font: normal normal 300 0.9em Arial, Helvetica, sans-serif;
+	margin: 0 0 0 20px;
+	padding: 0px 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+#language_list li.a1 {
+	background-color: #eee;
+}
+#language_list li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
